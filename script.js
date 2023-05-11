@@ -72,7 +72,7 @@ function loadData(jsonData){
         bg.src = "Images/clear.jpg";
         btn.style.background = 'rgb(1, 78, 133)';
     }
-    if(jsonData.weather[0].main == "mist"){
+    if(jsonData.weather[0].main == "Mist"){
         weatherconditionImg.src = "Images/mist1.png";
         bg.src = "Images/mist.jpg";
         btn.style.background = 'rgb(6, 136, 97)';
@@ -90,13 +90,13 @@ function loadData(jsonData){
         btn.style.background = 'rgb(3, 87, 74) ';
     }
 
-    if(jsonData.weather[0].main == "snow"){
+    if(jsonData.weather[0].main == "Snow"){
         weatherconditionImg.src = "Images/snow1.png";
         bg.src = "Images/snow.jpg";
         btn.style.background = 'rgb(136, 6, 6) ';
     }
 
-    if(jsonData.weather[0].main == "wind"){
+    if(jsonData.weather[0].main == "Wind"){
         weatherconditionImg.src = "Images/wind1.png";
         bg.src = "Images/windy.jpg";
         btn.style.background = 'rgb(6, 136, 88) ';
