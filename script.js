@@ -41,7 +41,8 @@ function loadData(jsonData){
     const tempmin = document.getElementById('tempmin');
     const feelslike = document.getElementById('feel-like');
     const weathermain = document.getElementById('weatherMain');
-    const bg = document.getElementById('background');
+    const bodycontainer = document.getElementById('body-container');
+    // const bg = document.getElementById('background');
     const btn = document.querySelector('button');
 
     
@@ -58,53 +59,53 @@ function loadData(jsonData){
 
     if(jsonData.weather[0].main == "Clouds"){
         weatherconditionImg.src = "Images/clouds1.png";
-        bg.src = "Images/cloudy.jpg";
+        bodycontainer.style.backgroundImage = "url('Images/cloudy.jpg')"
         btn.style.background = 'rgb(133, 96, 1) ';
 
     }
     if(jsonData.weather[0].main == "Haze"){
         weatherconditionImg.src = "Images/humidity1.png";
-        bg.src = "Images/Haze.jpg";
+        bodycontainer.style.backgroundImage = "url('Images/Haze.jpg')"
         btn.style.background = 'rgb(1, 124, 133) ';
     }
     if(jsonData.weather[0].main == "Clear"){
         weatherconditionImg.src = "Images/clear1.png";
-        bg.src = "Images/clear.jpg";
+        bodycontainer.style.backgroundImage = "url('Images/clear.jpg')";
         btn.style.background = 'rgb(1, 78, 133)';
     }
     if(jsonData.weather[0].main == "Mist"){
         weatherconditionImg.src = "Images/mist1.png";
-        bg.src = "Images/mist.jpg";
+        bodycontainer.style.backgroundImage = "url('Images/mist.jpg')";
         btn.style.background = 'rgb(6, 136, 97)';
 
     }
     if(jsonData.weather[0].main == "Drizzle"){
         weatherconditionImg.src = "Images/drizzle1.png";
-        bg.src = "Images/drizzle.jpg";
+        bodycontainer.style.backgroundImage = "url('Images/drizzle.jpg')";
         btn.style.background = 'rgb(1, 78, 133)';
 
     }
     if(jsonData.weather[0].main == "Rain"){
         weatherconditionImg.src = "Images/rain1.png";
-        bg.src = "Images/rainy.jpg";
+        bodycontainer.style.backgroundImage = "url('Images/rainy.jpg')";
         btn.style.background = 'rgb(3, 87, 74) ';
     }
 
     if(jsonData.weather[0].main == "Snow"){
         weatherconditionImg.src = "Images/snow1.png";
-        bg.src = "Images/snow.jpg";
+        bodycontainer.style.backgroundImage = "url('Images/snow.jpg')";
         btn.style.background = 'rgb(136, 6, 6) ';
     }
 
     if(jsonData.weather[0].main == "Wind"){
         weatherconditionImg.src = "Images/wind1.png";
-        bg.src = "Images/windy.jpg";
+        bodycontainer.style.backgroundImage = "url('Images/windy.jpg')";
         btn.style.background = 'rgb(6, 136, 88) ';
     }
 
     if(jsonData.weather[0].main == "Fog"){
         weatherconditionImg.src = "Images/wind1.png";
-        bg.src = "Images/fog.jpg";
+        bodycontainer.style.backgroundImage  = "url('Images/fog.jpg')";
         btn.style.background = 'rgb(0, 10, 0) ';
     }
 
