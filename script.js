@@ -59,7 +59,7 @@ function loadData(jsonData){
 
     if(jsonData.weather[0].main == "Clouds"){
         weatherconditionImg.src = "Images/clouds1.png";
-        bodycontainer.style.backgroundImage = "url('Images/cloudy1.jpg')"
+        bodycontainer.style.backgroundImage = "url('Images/cloudy2.jpg')"
         btn.style.background = 'rgb(133, 96, 1) ';
 
     }
